@@ -11,6 +11,7 @@ const { content } = Astro.props;
   <p class='text-slate text-sm md:text-base'>
     Published on {content.pubDate} by {content.author}
   </p>
+  <h1>{content.title}</h1>
   <slot />
   <p class='text-slate'>Written by {content.author}</p>
   <a href='/blog/' title='Back to blog'>&larr; Back to blog</a>

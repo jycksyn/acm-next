@@ -1,6 +1,9 @@
+import { glob } from 'astro/loaders';
 import { z, defineCollection } from 'astro:content';
+import { notionLoader } from 'notion-astro-loader';
 
 const blogCollection = defineCollection({
+  loader: glob({ pattern: '**\/[^_]*.md', base: "./src/content/blog" }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),

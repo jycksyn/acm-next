@@ -15,8 +15,8 @@ const width = 1200;
 const posts = await getCollection('blog');
 
 export function getStaticPaths() {
-  return posts.map((post) => ({
-    params: { slug: post.slug },
+  return posts.map((post: any) => ({
+    params: { slug: post.id },
     props: { title: post.data.title, description: post.data.description },
   }));
 }
