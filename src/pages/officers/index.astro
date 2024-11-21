@@ -1,0 +1,114 @@
+--- 
+import Layout from '@layouts/Default.astro';
+import OfficerList from '@components/officers/OfficerList.astro';
+
+
+const officers = [
+    {
+        name: 'David Cho',
+        position: 'Chair',
+        imgSrc: '/assets/astro.jpg',
+        imgAlt: 'David Cho',
+        bio: '',
+    },
+    
+    {
+        name: 'David Cho',
+        position: 'Vice Chair',
+        imgSrc: '/assets/astro.jpg',
+        imgAlt: 'David Cho',
+        bio: '',
+    },
+
+    {
+        name: 'David Cho',
+        position: '&hacks Chair',
+        imgSrc: '/assets/astro.jpg',
+        imgAlt: 'David Cho',
+        bio: '',
+    },
+
+    {
+        name: 'David Cho',
+        position: '&hacks Chair',
+        imgSrc: '/assets/astro.jpg',
+        imgAlt: 'David Cho',
+        bio: '',
+
+    },
+
+    {
+        name: 'David Cho',
+        position: 'Secretary',
+        imgSrc: '/assets/astro.jpg',
+        imgAlt: '',
+        bio: '',
+    },
+
+    {
+        name: 'David Cho',
+        position: 'Treasurer',
+        imgSrc: '/assets/astro.jpg',
+        imgAlt: 'David Cho',
+        bio: '',
+    },
+
+    {
+        name: 'David Cho',
+        position: 'Career Chair',
+        imgSrc: '/assets/astro.jpg',
+        imgAlt: 'David Cho',
+        bio: '',
+    },
+
+    {
+        name: 'David Cho',
+        position: 'Special Events Chair',
+        imgSrc: '/assets/astro.jpg',
+        imgAlt: 'David Cho',
+        bio: '',
+
+    },
+
+    {
+        name: 'David Cho',
+        position: 'Social Chair',
+        imgSrc: '/assets/astro.jpg',
+        imgAlt: 'David Cho',
+        bio: '',
+
+    },
+
+    {
+        name: 'David Cho',
+        position: 'Webmaster',
+        imgSrc: '/assets/astro.jpg',
+        imgAlt: 'David Cho',
+        bio: '',
+    },
+
+    {
+        name: 'Jim Deverick',
+        position: 'Faculty Advisor',
+        imgSrc: '/src/assets/jim.webp',
+        imgAlt: 'Jim Deverick',
+        bio: 'James “Jim” Deverick is a teaching professor of Computer Science, specializing in computer systems. He is the beloved faculty advisor of ACM, and he has a tradition of staying overnight in Swem during &hacks.',
+
+    },
+    
+
+];
+---
+
+<Layout
+  title='Blog'
+  description='Brutal Blog | On this page you can find a collection of blogposts'
+  pageTitle='Brutal Blog'
+>
+  <main style="background-color: #6A9DC0; padding: 1.5rem;">
+    <OfficerList officers={officers} />
+  </main>
+</Layout>
+
+
+---
