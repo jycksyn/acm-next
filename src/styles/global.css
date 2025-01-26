@@ -12,10 +12,10 @@
   filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
 }
 
-.card {
+.brutal-card {
   background-color: #00FF99 !important; /* FIXME: is that ACM green? */
-  color: #00FF99 !important;
 }
+
 :root 
 {  /* ---- ⚫️ Colors ⚪️ ---- */
   /* Base Tokens */
