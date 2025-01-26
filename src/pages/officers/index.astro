@@ -2,7 +2,7 @@
 import Layout from '@layouts/Default.astro';
 import OfficerList from '@components/officers/OfficerList.astro';
 
-
+/* NB that you must use the path /src/assets; /assets/ alone doesn't work. */
 const officers = [
     {
         name: 'Krishna Swaminathan',
@@ -15,9 +15,12 @@ const officers = [
     {
         name: 'Bennett Matuszewski',
         position: 'Vice Chair',
-        imgSrc: '/assets/astro.jpg',
+        imgSrc: '/src/assets/bennett.png',
         imgAlt: 'Bennett Matuszewski, Vice Chair',
-        bio: '',
+        bio: "Hi, my name is Bennett and I am a sophomore studying computer science and business analytics. " +
+             "In my free time I enjoy playing and developing video games, watching premier league, and playing " +
+             "ultimate frisbee. I'm excited to be your ACM vice chair this year and hope I can put on some fun workshops!",
+
     },
 
     {
