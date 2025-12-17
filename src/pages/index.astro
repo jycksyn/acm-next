@@ -28,7 +28,7 @@ const builtWith = [
   pageTitle='W&M ACM Student Chapter'
   description='The W&M ACM chapter Website. We Back Baby!!!'
 >
-  
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
   <main style="background-color: #6A9DC0 !important; padding: 1.5rem">
     <MobileSocials />
     <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
@@ -61,71 +61,41 @@ const builtWith = [
         </Card>
       </div>
       <div class='col-span-4'>
+        <div class="mb-5">
+        <Card color="#FFB500">
+          <p class="text-xl md:text-2xl lg:text-3xl dm-serif mb-5">ACM Event Spotlight:</p>
+          <h2 class="text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif underline text-center">Winter Break</h2>
+          <p class="text-3xl text-center dm-serif mb-4">There are no upcoming ACM events at this time. See you next semester!</em></p>
+          <!--<Button target={'_blank'} href=""><p class="text-xl dm-serif p-2">Check back soon for an RSVP</p></Button>--><!--use this as a link; commented because there's nothing to do  -->
+        </Card>
+        </div>
         <Card color="#00CC77">
           <h2 class='text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
             What is W&M ACM?
           </h2>
-          <p class='poppins'>
+          <p class='poppins dm-serif'>
             We’re a community of students interested in computing and tech! 
             Join us for our weekly meetings, our yearly hackathon, &hacks, and other fun events.
           </p>
+          <!-- I feel like it would be cool to have a 3D model of our logo or something. Never  quite got to it, but here's some basics with an avocado -->
+          <!--<model-viewer
+          // className="model-viewer"
+          src="/src/assets/Avocado.glb"
+          alt="A rock"
+          exposure="0.5"
+          camera-controls
+          ar
+          ar-modes="webxr"
+          ref="something"
+        ></model-viewer>-->
         </Card>
       </div>
       <!-- spacer -->
       <div class='col-span-1'></div>
       <div class='col-span-6'>
-        <Card color="#00CC77">
-          <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
-            &hacks
-          </h2>
-          <p class='poppins' style="margin-bottom: 20px;">
-            William & Mary's annual Hackathon! Date, time, and venue are TBD.
-          </p>
-          <Pill>
-            <a
-            target={"_blank"} 
-            class='sanchez'
-            href="https://andhacks.cs.wm.edu/"
-            target='_blank'
-          >
-            Click here for more about &hacks
-          </a>
-          
-          </Pill>
-          <Pill>
-            <a
-            target={"_blank"}
-            class="sanchez"
-            href="https://www.youtube.com/watch?v=DdQw4w9WgXcQ"
-            target="_blank"
-            >
-            Click here to register for &hacks
-          </a>
-          </Pill>
-         <!-- 
-          <ul class='flex gap-4 flex-wrap'>
-            {
-              builtWith.map((item) => (
-                <li>
-                  <Pill>
-                    <a
-                      class='sanchez'
-                      href={item.url}
-                      target='_blank'
-                      title={`Go to ${item.name}`}
-                    >
-                      {item.name}
-                    </a>
-                  </Pill>
-                </li>
-              ))
-            }
-          </ul>
-        -->
-        </Card>
       </div>
-    
     </section>
-    <RecentBlogPosts />
+    <!-- <RecentBlogPosts />-->
   </main>
+  
 </Layout>
